@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="js.js">
+    <script>
+        function changer() {
+    document.getElementById("headingElement").textContent = "This is after clicking on button";
+    document.getElementById("headingElement").style.color = "blue";
+document.getElementById("headingElement").style.background = "black";
+
+            
+}
+function Off(){
+document.getElementById("On_img").style.color = "Off Image";
+document.getElementById("headingElement").style.background = "blue";
+document.getElementById("headingElement").textContent = "Switch Off";
+
+
+}
+function On(){
+    document.getELementById("On_img").src = "On image";
+    document.getElementById("headingElement").style.background = "blue";
+document.getElementById("headingElement").textContent = "Switch On";
+
+
+}
+    </script>
+</head>
+<body>
+    <img src="op.png" alt="" id="On_img">
+    <h2 id="headingElement">Text before</h2>
+    <button onclick="changer()">Change Heading</button>
+    <div>
+        <button onclick="Off()">Off</button>
+    </div>
+    <div>
+        <button onclick="On()">On</button>
+    </div>
+</body>
+</html>
